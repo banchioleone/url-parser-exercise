@@ -1,11 +1,42 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
     <title>URL Parser Exercise</title>
-</head>
-<body>
-    <script src="solution.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+        <div class="col">
+            <h2>URL Parser</h2>
+            <div class="row mb-3">
+                <label for="formatString" class="col-sm-3 col-form-label">URL Format String</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" id="formatString" value="/:version/api/:collection/:id">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="urlInstance" class="col-sm-3 col-form-label">URL Instance</label>
+                <div class="col-sm-9">
+                <input type="text" class="form-control" id="urlInstance" value="http://ebanchio.com.ar/6/api/listings/3?sort=desc&limit=10">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="parseBtn()">Parse!</button>
+            <div class="mb-3 mt-3">
+            <label for="result" class="form-label">Result:</label>
+            <textarea class="form-control" id="result" rows="4"></textarea>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="solutionUI.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+  </body>
 </html>
